@@ -1,0 +1,26 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+
+
+repositories.mavenCentral();
+
+
+dependencies.implementation("org.apache.commons:commons-csv:1.10.0");
+
+
+
+sourceSets.main.java.srcDirs("src");
+sourceSets.main.resources.srcDirs("resources");
+
+
+
+application.mainClass = "Main"
+
+
+run { standardInput = System.in }
+
+
